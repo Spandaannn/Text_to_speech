@@ -109,10 +109,12 @@ speed_combobox.place(x=730,y=200)
 speed_combobox.set('Normal')
 
 imageicon=PhotoImage(file="speak.png")
+imageicon=imageicon.subsample(15,15)
 btn=Button(root,text="Speak",compound=LEFT,image=imageicon,width=130,font="arial 14 bold",command=speaknow)
 btn.place(x=550,y=280)
 
 imageicon2=PhotoImage(file="download.png")
+imageicon2=imageicon2.subsample(10,10)
 save=Button(root,text="Save",compound=LEFT,image=imageicon2,width=130,bg="#39c790",font="arial 14 bold",command=download)
 save.place(x=730,y=280)
 
